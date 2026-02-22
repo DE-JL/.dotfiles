@@ -5,11 +5,17 @@ BasedOnStyle: LLVM
 # Indentation
 IndentWidth: 2
 ContinuationIndentWidth: 2
+AccessModifierOffset: -2
 
-# Braces
+# Allman*
 BreakBeforeBraces: Allman
 
-# Spaces
+# K&R style
+# BreakBeforeBraces: Custom
+# BraceWrapping:
+#   AfterFunction: true
+
+# Inner spacing
 SpacesInParentheses: true
 SpacesInSquareBrackets: true
 SpacesInContainerLiterals: true
@@ -19,12 +25,19 @@ BreakConstructorInitializers: BeforeComma
 ConstructorInitializerIndentWidth: 2
 
 # Column limit
-ColumnLimit: 120
+ColumnLimit: 80
 
-# Alignment
+# Alignment*
 AlignConsecutiveAssignments: true
 AlignConsecutiveBitFields: true
 AlignConsecutiveDeclarations: true
+
+AllowAllParametersOfDeclarationOnNextLine: false
+AllowShortFunctionsOnASingleLine: Inline
+AlignAfterOpenBracket: Align
+BinPackArguments: false
+BinPackParameters: false
+
 AlignOperands: Align
 PointerAlignment: Left
 
