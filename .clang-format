@@ -3,34 +3,34 @@ Language: Cpp
 BasedOnStyle: LLVM
 
 # Indentation
-IndentWidth: 2
-ContinuationIndentWidth: 2
-AccessModifierOffset: -2
+IndentWidth: 4
+ContinuationIndentWidth: 4
+AccessModifierOffset: -4
 
-# Allman*
-BreakBeforeBraces: Allman
+# Allman
+# BreakBeforeBraces: Allman
 
 # K&R style
-# BreakBeforeBraces: Custom
-# BraceWrapping:
-#   AfterFunction: true
+BreakBeforeBraces: Custom
+BraceWrapping:
+  AfterFunction: true
 
 # Inner spacing
-SpacesInParentheses: true
-SpacesInSquareBrackets: true
-SpacesInContainerLiterals: true
+# SpacesInParentheses: true
+# SpacesInSquareBrackets: true
+# SpacesInContainerLiterals: true
 
 # Constructor initializer lists
 BreakConstructorInitializers: BeforeComma
-ConstructorInitializerIndentWidth: 2
+ConstructorInitializerIndentWidth: 4
 
 # Column limit
-ColumnLimit: 80
+ColumnLimit: 120
 
-# Alignment*
-AlignConsecutiveAssignments: true
-AlignConsecutiveBitFields: true
-AlignConsecutiveDeclarations: true
+# Alignment
+# AlignConsecutiveAssignments: true
+# AlignConsecutiveBitFields: true
+# AlignConsecutiveDeclarations: true
 
 AllowAllParametersOfDeclarationOnNextLine: false
 AllowShortFunctionsOnASingleLine: Inline
@@ -42,5 +42,5 @@ AlignOperands: Align
 PointerAlignment: Left
 
 # Includes
-SortIncludes: true
+SortIncludes: false
 IncludeBlocks: Preserve

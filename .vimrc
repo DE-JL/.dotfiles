@@ -1,3 +1,6 @@
+" Appearance
+set background=dark
+
 " Syntax and file type
 syntax enable
 filetype plugin indent on
@@ -25,7 +28,7 @@ set ignorecase smartcase
 
 " Tabs
 set expandtab
-set tabstop=2 softtabstop=2 shiftwidth=2
+set tabstop=4 softtabstop=4 shiftwidth=4
 
 " C-style indents
 set cindent
