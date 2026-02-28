@@ -1,18 +1,19 @@
+" Basics
+set nocompatible          " Use vim not vi
+set autoread              " Auto reload on edit
+syntax enable             " Syntax highlighting
+filetype plugin indent on " File type detection
+
 " Appearance
 set background=dark
-
-" Syntax and file type
-syntax enable
-filetype plugin indent on
+set ttyfast
+set lazyredraw
 
 " No error bells
 set noerrorbells
 set visualbell t_vb=
 
-" Auto reload on edit
-set autoread
-
-" Backup and .swp files
+" Backup and swap files
 set backupdir=/tmp//
 set directory=/tmp//
 
@@ -23,12 +24,17 @@ set fillchars=eob:\
 set scrolloff=10
 
 " Search
-set hlsearch incsearch
-set ignorecase smartcase
+set hlsearch
+set incsearch
+set ignorecase
+set smartcase
 
 " Tabs
 set expandtab
-set tabstop=4 softtabstop=4 shiftwidth=4
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
+set shiftround
 
 " C-style indents
 set cindent
@@ -51,7 +57,9 @@ set foldlevelstart=99
 " ==============================================================================
 
 " Line numbering
-set number relativenumber cursorline
+set number
+set relativenumber
+set cursorline
 highlight CursorLine cterm=none ctermbg=233
 highlight CursorLineNr cterm=bold
 highlight LineNr ctermfg=grey
